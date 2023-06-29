@@ -7,9 +7,9 @@ interface JungleProps {
 
 const Jungle = ({ jungleImages, onDelete }: JungleProps) => {
   return (
-    <div className="w-[90%] mx-auto flex flex-wrap justify-start items-center gap-5">
+    <div className="w-[90%] mx-auto flex flex-wrap justify-center items-center gap-10">
       {jungleImages.map((img, i) => (
-        <div className="relative w-32 h-32 border border-solid border-white">
+        <div className="relative w-44 h-44  border-2 border-solid border-white">
           <img className="object-cover h-full w-full" key={i} src={img} />
           <button
             className="absolute bottom-0 right-0 bg-white"
